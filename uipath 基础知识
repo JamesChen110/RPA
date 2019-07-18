@@ -1,0 +1,2 @@
+datatable 变量设置 原值 new system.data.datatable ，避免出现空值，方便判断
+读取文件directory.GetFiles("C:\Users\c0c04nc\Desktop\GiftCard\2019Q2\余额","*.xls*")，path.GetFileName(item)文件名
