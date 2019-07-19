@@ -1,0 +1,68 @@
+			Uipath 学习笔记
+
+一、	Click
+
+Options
+无：当前激活界面下，触发正常，被动触发（疼是确认被打）
+Sendwindowmessages: 不需要在当前激活状态，通过其它方式触发，内在触发（我觉得疼，不一定是被打）
+Simulateclick：不需要在当前激活状态，主动触发，就如本身属性激活（它就刻着字说明疼）
+3. 抓以下网址发现下拉窗口选择不了https://xjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25222&siteid=5060#home
+补充：原因，1.就是下拉框没有显示，就点击了，解决方法，用find element先查找到元素，然后再点击
+    
+二、	Type into
+找到对应的元素，相对简单
+三、	Select item
+目前在网页中很难找到符合这个activaties，哪一种下拉窗口或者那种类型属于
+四、	Click text
+
+Txt文档可以实现，但大部分网页和word不能实现
+例如： http://pipeline-cn.wal-mart.com/CN-pipeline/index.asp 可实现
+	http://news.baidu.com/ 不能实现
+补充：1.使用内部网会有这样的问题， 2是这样搜索会很慢，3.不能有空行
+
+
+这样设置“2019年”查找文本，找不到？
+
+ 
+
+	
+五、	Get text
+六、	Get OCR test
+七、	Element exist
+八、	Find element
+保存到data table
+九、	Attribute
+查找uielement的属性名称：
+1.	Find element，output变量  element1
+2.	For each ，遍历element1.attribute，得到aaname ,id 等属性名称
+十、	excel scope
+十一、window scope（attach window）
+十二、attach browser
+	最好是等待这个网页刷新后再此行里面的DO动作，否则会出现问题
+       Navigate to 可以用来打开网页
+	Uipath.core.browser
+十三、数组 toarray
+	Arr1.concat(arr2)
+	Arr2.append(“value”)
+ 十四、data table
+	Datarow=datatable.newrow
+	datarow1.ItemArray= {1,2,3}
+
+
+
+
+	
+
+	
+
+
+
+1234
+
+
+
+Other、问题
+1.	当网速很慢需要等很长时间，click之后，需要在新页面type into 会超时
+2.	用这个电脑 studio 设计很卡
+<html title='职位搜索欢迎页面' />
+<webctrl id='initialSearchBox__04B_listbox' tag='UL' />
