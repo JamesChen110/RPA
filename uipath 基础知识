@@ -1,2 +1,6 @@
 datatable 变量设置 原值 new system.data.datatable ，避免出现空值，方便判断
 读取文件directory.GetFiles("C:\Users\c0c04nc\Desktop\GiftCard\2019Q2\余额","*.xls*")，path.GetFileName(item)文件名
+时间比较 datediff("s",ExceptionTime, Datetime.Now) >60
+获取系统时间datetime.now
+获取计算机所有的运行的列表 get processes
+把sheet的数据写入table 表后，判断是否为空 EntityList.Rows.Count >0 And EntityList.Columns(0).ColumnName <> "Column1"
