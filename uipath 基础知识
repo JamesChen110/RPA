@@ -12,3 +12,4 @@
 在文件夹中找到对应的文件directory.GetFiles(文件夹,"VATSummary*.xls")
 连接access 数据库 "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + """" + AccessDBPath_Arg + """"
 数据库赋值到变量的variable databaseconnect
+判断字段是否为空 Not String.IsNullOrEmpty(row("Name").ToString.Trim)
