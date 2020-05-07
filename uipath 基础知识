@@ -4,12 +4,14 @@
 4.获取系统时间datetime.now
 5.获取计算机所有的运行的列表 get processes
 6.把sheet的数据写入table 表后，判断是否为空 EntityList.Rows.Count >0 And EntityList.Columns(0).ColumnName <> "Column1"
-字典用法RefDic ; system.collections.generic.dictionary<system.string,system.string> ;new system.Collections.Generic.Dictionary(Of String,String)
-字典添加key value 用 add to dictionary
-创建文件夹和文件（移动文件）create directory create file 
-判断文件\文件夹是否存在 path exists
-获取仅文件名Path.GetFileNameWithoutExtension(VATFileName(0)) 不带后缀；Path.GetFileName带后缀（.xls）
-在文件夹中找到对应的文件directory.GetFiles(文件夹,"VATSummary*.xls")
-连接access 数据库 "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + """" + AccessDBPath_Arg + """"
-数据库赋值到变量的variable databaseconnect
-判断字段是否为空 Not String.IsNullOrEmpty(row("Name").ToString.Trim)
+7.字典用法RefDic ; system.collections.generic.dictionary<system.string,system.string> ;new system.Collections.Generic.Dictionary(Of String,String)
+8.字典添加key value 用 add to dictionary
+9.创建文件夹和文件（移动文件）create directory create file 
+10.判断文件\文件夹是否存在 path exists
+11.获取仅文件名Path.GetFileNameWithoutExtension(VATFileName(0)) 不带后缀；Path.GetFileName带后缀（.xls）
+12.在文件夹中找到对应的文件directory.GetFiles(文件夹,"VATSummary*.xls")
+13.连接access 数据库 "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + """" + AccessDBPath_Arg + """"
+14.数据库赋值到变量的variable databaseconnect
+15.判断字段是否为空 Not String.IsNullOrEmpty(row("Name").ToString.Trim)
+16.关闭应用进程 Kill process uipath.core.activities.getprocess (item : system.diagnostics.process)
+
