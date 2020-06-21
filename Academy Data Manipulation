@@ -1,0 +1,9 @@
+String Methods
+Concat, Format,Contains,IndexOf,Join,Replace,Split,Substring
+以下示例：message 是string变量（value=）
+"You searched for author Mark Twain. His books can be found in the following stores: Bookland, Classics bookstore."
+message.Split("."c)(1).ToString.Split(":"c).Last.ToString.Split(","c).ToList
+message.Split("."c).First.ToString.Substring(message.LastIndexOf("author")+7)
+开头首字母大写
+使用StrConv方法将它们转换为ProperCase：StrConv（"ok"，VbStrConv.ProperCase）
+合并list: Enumerable.Concat（SpainCities.AsEnumerable，UKCities.AsEnumerable）.ToList
