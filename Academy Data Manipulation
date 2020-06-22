@@ -7,3 +7,8 @@ message.Split("."c).First.ToString.Substring(message.LastIndexOf("author")+7)
 开头首字母大写
 使用StrConv方法将它们转换为ProperCase：StrConv（"ok"，VbStrConv.ProperCase）
 合并list: Enumerable.Concat（SpainCities.AsEnumerable，UKCities.AsEnumerable）.ToList
+ String.Join (", ", countries.GetRange(0,3))
+ 距离今天差几天
+Datetime.Now.Subtract(new DateTime(Datetime.Now.Year, TmpDate.Month, TmpDate.Day))
+ New Dictionary(Of Int32,String) From {{2006,"Oscar Pereiro"},{2007,"Alberto Contador"}}
+ChosenCity isnot nothing
