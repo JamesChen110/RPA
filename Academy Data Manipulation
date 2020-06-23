@@ -1,14 +1,19 @@
-String Methods
-Concat, Format,Contains,IndexOf,Join,Replace,Split,Substring
-以下示例：message 是string变量（value=）
-"You searched for author Mark Twain. His books can be found in the following stores: Bookland, Classics bookstore."
-message.Split("."c)(1).ToString.Split(":"c).Last.ToString.Split(","c).ToList
-message.Split("."c).First.ToString.Substring(message.LastIndexOf("author")+7)
-开头首字母大写
-使用StrConv方法将它们转换为ProperCase：StrConv（"ok"，VbStrConv.ProperCase）
-合并list: Enumerable.Concat（SpainCities.AsEnumerable，UKCities.AsEnumerable）.ToList
- String.Join (", ", countries.GetRange(0,3))
- 距离今天差几天
-Datetime.Now.Subtract(new DateTime(Datetime.Now.Year, TmpDate.Month, TmpDate.Day))
- New Dictionary(Of Int32,String) From {{2006,"Oscar Pereiro"},{2007,"Alberto Contador"}}
-ChosenCity isnot nothing
+1.String Methods
+2.Concat, Format,Contains,IndexOf,Join,Replace,Split,Substring
+3.以下示例：message 是string变量（value=）
+4."You searched for author Mark Twain. His books can be found in the following stores: Bookland, Classics bookstore."
+5.message.Split("."c)(1).ToString.Split(":"c).Last.ToString.Split(","c).ToList
+6.message.Split("."c).First.ToString.Substring(message.LastIndexOf("author")+7)
+7.开头首字母大写
+8.使用StrConv方法将它们转换为ProperCase：StrConv（"ok"，VbStrConv.ProperCase）
+9.合并list: Enumerable.Concat（SpainCities.AsEnumerable，UKCities.AsEnumerable）.ToList
+10. String.Join (", ", countries.GetRange(0,3))
+11. 距离今天差几天
+12.Datetime.Now.Subtract(new DateTime(Datetime.Now.Year, TmpDate.Month, TmpDate.Day))
+13.New Dictionary(Of Int32,String) From {{2006,"Oscar Pereiro"},{2007,"Alberto Contador"}}
+14.ChosenCity isnot nothing
+字符串截取
+InputData.IndexOf("@")
+EmailAddress_Part1.Substring(EmailAddress_Part1.LastIndexOf(" "))
+正则表达式匹配邮箱
+"((?>[a-zA-Z\d!#$%&'*+\-\/=?^_`{|}~]+\x20*|"((?=[\x01-\x7f])[^"\\]|\\[\x01-\x7f])*"\x20*)*(?<angle><))?((?!\.)(?>\.?[a-zA-Z\d!#$%&'*+\-\/=?^_`{|}~]+)+|"((?=[\x01-\x7f])[^"\\]|\\[\x01-\x7f])*")@(((?!-)[a-zA-Z\d\-]+(?<!-)\.)+[a-zA-Z]{2,}|\[(((?(?<!\[)\.)(25[0-5]|2[0-4]\d|[01]?\d?\d)){4}|[a-zA-Z\d\-]*[a-zA-Z\d]:((?=[\x01-\x7f])[^\\\[\]]|\\[\x01-\x7f])+)\])(?(angle)>)"
