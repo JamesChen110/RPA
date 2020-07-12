@@ -22,3 +22,4 @@ inputTable.Rows.IndexOf(row)
 字符转换 Integer.Parse
 vbcr 换行符
 针对换行符号的替换或者分割 val.ToString.Split(system.environment.NewLine(0))
+密码转string: new System.Net.NetworkCredential(string.Empty, password).Password
