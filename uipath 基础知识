@@ -15,3 +15,4 @@
 15.判断字段是否为空 Not String.IsNullOrEmpty(row("Name").ToString.Trim)
 16.关闭应用进程 Kill process uipath.core.activities.getprocess (item : system.diagnostics.process)
 17.数组添加新元素 arr1.contact({"1"}).toarray
+18.String.Format(“Today is : {0}”, now)
