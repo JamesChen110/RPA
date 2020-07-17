@@ -16,3 +16,4 @@
 16.关闭应用进程 Kill process uipath.core.activities.getprocess (item : system.diagnostics.process)
 17.数组添加新元素 arr1.contact({"1"}).toarray
 18.String.Format(“Today is : {0}”, now)
+19.in_TransactionItem.SpecificContent("VendorID9D").ToString
